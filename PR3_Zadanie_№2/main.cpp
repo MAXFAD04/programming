@@ -8,21 +8,21 @@ int main()
 	setlocale(LC_ALL, "Russian");
 
 	int size;
-	cout << "������� ���������� ������ -> "; cin >> size;
+	cout << "Введите количество дробей -> "; cin >> size;
 	cout << "\n";
 	rational* arr = new rational[size];
 	int a, b;
 
-	cout << "������� ����� ����� ������ ����� ������\n";
+	cout << "Вводить числа нужно строго через пробел\n";
 	for (int i = 0; i < size; i++)
 	{
-		cout << "������� ��������� � ����������� ����� ����� " << i + 1 << " : "; cin >> a >> b;
+		cout << "Введите числитель и знаминатель дроби номер " << i + 1 << " : "; cin >> a >> b;
 		(arr[i]).set(a,b);
 	}
 	cout << "\n";
 	for (int i = 0; i < size; i++)
 	{
-		cout << "\n����� ����� " << i + 1 << " : ";
+		cout << "\nДробь номер " << i + 1 << " : ";
 		(arr[i]).show();
 	}
 	cout << "\n";
